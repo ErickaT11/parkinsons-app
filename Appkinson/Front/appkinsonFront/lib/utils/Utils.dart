@@ -103,8 +103,8 @@ class Utils {
     DateTime before = DateTime.now();
     DateTime after;
     print('Hour: ${before.hour}');
-    if (before.hour < 18) {
-      after = new DateTime(before.year, before.month, before.day, 17, 22);
+    if (before.hour < 23) {
+      after = new DateTime(before.year, before.month, before.day, 22, 50);
     } else {
       after = new DateTime(before.year, before.month, before.day + 1, 10);
     }
